@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aima | About</title>
+    <style>
+        body{min-height:100vh;margin:0;padding-bottom:60px;display:grid;place-items:center;background-color:#43103b;background-image:linear-gradient(rgba(67,16,59,.7),rgba(67,16,59,.7)),url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=85");background-size:cover;background-position:center;background-attachment:fixed;color:#f0f4f8;font-family:Arial,sans-serif;text-align:center}main{max-width:650px;padding:30px;animation:fadeIn 1s ease-out}h1{font-size:64px;margin-bottom:20px;color:#ffb3ed}p{font-size:20px;line-height:1.6}.page-nav{position:fixed;z-index:10;top:24px;left:24px;display:flex;flex-wrap:wrap;gap:10px}.page-nav a{padding:10px 16px;border-radius:6px;background:#f0f4f8;color:#43103b;text-decoration:none;transition:.3s}.page-nav a:hover{transform:translateY(-4px);background:#ffb3ed}.developer-button{display:inline-flex;align-items:center;gap:10px;margin-top:28px;padding:13px 22px;border:2px solid #ffb3ed;border-radius:7px;background:#ffb3ed;color:#43103b;font-size:15px;font-weight:bold;text-decoration:none;transition:transform .3s,background-color .3s,box-shadow .3s}.developer-button:hover{background:#f0f4f8;box-shadow:0 6px 18px rgba(0,0,0,.3);transform:translateY(-4px)}.reference-footer{position:fixed;z-index:5;right:0;bottom:0;left:0;width:100%;min-height:40px;display:flex;align-items:center;justify-content:center;padding:8px 16px;box-sizing:border-box;background:rgba(67,16,59,.92);color:#ffb3ed;font-size:14px;text-align:center;pointer-events:none;transition:none;animation:none}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+        .education {
+            margin: 30px auto 0;
+            text-align: left;
+        }
+
+        .education h2 {
+            margin: 0 0 16px;
+            color: #ffb3ed;
+            text-align: center;
+        }
+
+        .education-item {
+            margin-top: 12px;
+            padding: 15px 18px;
+            border-left: 3px solid #ffb3ed;
+            background: rgba(67, 16, 59, 0.82);
+        }
+
+        .education-item strong {
+            display: block;
+            color: #ffb3ed;
+            font-size: 14px;
+        }
+
+        .education-item span {
+            display: block;
+            margin-top: 4px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .education-item small {
+            display: block;
+            margin-top: 4px;
+            color: #f0f4f8;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="page-nav" aria-label="Page navigation"><a href="profile.html">Profile</a><a href="skills.html">Skills</a><a href="about.html">About</a></nav>
+    <a class="contact-float" href="contact.html" aria-label="Contact" title="Drag or click Contact" style="position: fixed; z-index: 10; right: 24px; bottom: 56px; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #ffb3ed; color: #43103b; font-size: 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.35); cursor: grab; touch-action: none;">&#9993;</a>
+    <main>
+        <h1>About Aima</h1>
+        <p>I am a Python developer who enjoys building useful, simple, and creative digital projects.</p>
+        <section class="education" aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <article class="education-item">
+                <strong>2024 - 2028</strong>
+                <span>Bachelor of Information Technology</span>
+                <small>Lahore Garrison University</small>
+            </article>
+            <article class="education-item">
+                <strong>2022 - 2024</strong>
+                <span>Intermediate in Computer Science (ICS)</span>
+                <small>Fazaia College and University for Women</small>
+            </article>
+            <article class="education-item">
+                <strong>September 2026</strong>
+                <span>Basics of Python</span>
+                <small>Cambridge International Qualifications (CIQ), UK, through UniAthena</small>
+            </article>
+        </section>
+        <a class="developer-button" href="aima.html" aria-label="Return to Developer page">Back to Developer</a>
+    </main>
+    <footer class="reference-footer">Reference by Aima Maqsood</footer>
+</body>
+<script src="contact-drag.js"></script>
+</html>

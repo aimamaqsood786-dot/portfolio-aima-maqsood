@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aima | Profile</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding-bottom: 60px;
+            display: grid;
+            place-items: center;
+            background-color: #43103b;
+            background-image:
+                linear-gradient(rgba(67, 16, 59, 0.68), rgba(67, 16, 59, 0.68)),
+                url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        main {
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #ffb3ed;
+            font-size: 20px;
+        }
+
+        .summary {
+            max-width: 720px;
+            margin: 0 auto;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 22px;
+            color: #43103b;
+            background-color: #f0f4f8;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .next-link {
+            display: inline-block;
+            margin: 24px 8px 0;
+            padding: 12px 22px;
+            color: #43103b;
+            background-color: #ffb3ed;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .next-link:hover {
+            background-color: #f0f4f8;
+            transform: translateY(-5px);
+        }
+
+        .page-nav {
+            position: fixed;
+            z-index: 10;
+            top: 24px;
+            left: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .page-nav a {
+            padding: 10px 16px;
+            border-radius: 6px;
+            background: #f0f4f8;
+            color: #43103b;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .page-nav a:hover {
+            background: #ffb3ed;
+            transform: translateY(-4px);
+        }
+
+        .back-link:hover {
+            background-color: #ffb3ed;
+            transform: translateY(-5px);
+        }
+
+        .reference-footer {
+            position: fixed;
+            z-index: 5;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            box-sizing: border-box;
+            background: rgba(67, 16, 59, 0.92);
+            color: #ffb3ed;
+            font-size: 14px;
+            text-align: center;
+            pointer-events: none;
+            transition: none;
+            animation: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="page-nav" aria-label="Page navigation">
+        <a href="profile.html">Profile</a>
+        <a href="skills.html">Skills</a>
+        <a href="about.html">About</a>
+    </nav>
+    <a class="contact-float" href="contact.html" aria-label="Contact" title="Drag or click Contact" style="position: fixed; z-index: 10; right: 24px; bottom: 56px; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #ffb3ed; color: #43103b; font-size: 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.35); cursor: grab; touch-action: none;">&#9993;</a>
+    <main>
+        <h1>Profile</h1>
+        <p class="summary">Backend Developer with 6 months of professional Python experience and a strong foundation in SQL, databases, OOP, and problem-solving. Experienced in developing backend functionality, debugging applications, and working with database-driven systems. Eager to apply technical skills in a professional development environment while continuously learning and growing as a software developer.</p>
+        <a class="back-link" href="aima.html">Back to Developer</a>
+    </main>
+    <footer class="reference-footer">Reference by Aima Maqsood</footer>
+</body>
+<script src="contact-drag.js"></script>
+</html>

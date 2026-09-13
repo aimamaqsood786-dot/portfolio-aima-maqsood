@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aima | python Developer</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+            padding-bottom: 60px;
+            background-color: #43103b;
+            background-image:
+                linear-gradient(rgba(67, 16, 59, 0.72), rgba(67, 16, 59, 0.72)),
+                url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=85");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f0f4f8;
+        }
+
+        h1 {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            left: 0;
+            margin: 0;
+            font-size: 72px;
+            text-align: center;
+            transform: translateY(-50%);
+            animation: fadeIn 1.2s ease-out;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #ffb3ed;
+            transform: translateY(-50%) scale(1.06);
+        }
+
+        .page-links {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 14px;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            margin: 0;
+        }
+
+        .page-link {
+            display: inline-block;
+            padding: 12px 22px;
+            color: #43103b;
+            background-color: #f0f4f8;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .page-link:hover {
+            background-color: #ffb3ed;
+            transform: translateY(-5px);
+        }
+
+        p {
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .reference-footer {
+            position: fixed;
+            z-index: 5;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            box-sizing: border-box;
+            background: rgba(67, 16, 59, 0.92);
+            color: #ffb3ed;
+            font-size: 14px;
+            text-align: center;
+            pointer-events: none;
+            transition: none;
+            animation: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Python Developer</h1>
+    <nav class="page-links" aria-label="Page navigation">
+        <a class="page-link" href="profile.html">Profile</a>
+        <a class="page-link" href="skills.html">Skills</a>
+        <a class="page-link" href="about.html">About</a>
+    </nav>
+    <a class="contact-float" href="contact.html" aria-label="Contact" title="Drag or click Contact" style="position: fixed; z-index: 10; right: 24px; bottom: 56px; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #ffb3ed; color: #43103b; font-size: 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.35); cursor: grab; touch-action: none;">&#9993;</a>
+    <footer class="reference-footer">Reference by Aima Maqsood</footer>
+</body>
+<script src="contact-drag.js"></script>
+</html>

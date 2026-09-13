@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aima | Contact</title>
+    <style>
+        :root {
+            --plum: #43103b;
+            --pink: #ffb3ed;
+            --white: #f0f4f8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 30px 16px 90px;
+            background-color: var(--plum);
+            background-image:
+                linear-gradient(rgba(67, 16, 59, 0.72), rgba(67, 16, 59, 0.72)),
+                url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=85");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            width: min(760px, 100%);
+            padding: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            color: var(--pink);
+            font-size: clamp(42px, 8vw, 64px);
+            text-align: center;
+        }
+
+        .email-address {
+            margin-bottom: 28px;
+            color: var(--pink);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        form {
+            overflow: hidden;
+            border: 1px solid rgba(240, 244, 248, 0.35);
+            border-radius: 8px;
+            background: rgba(67, 16, 59, 0.82);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 16px;
+            border-bottom: 1px solid rgba(240, 244, 248, 0.2);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            width: 155px;
+            color: var(--pink);
+            font-size: 13px;
+            letter-spacing: 0.08em;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            padding: 10px;
+            background: rgba(240, 244, 248, 0.95);
+            color: var(--plum);
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid var(--pink);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 16px;
+        }
+
+        button,
+        .back-link {
+            border: 0;
+            border-radius: 5px;
+            padding: 12px 22px;
+            font: bold 14px Arial, sans-serif;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button {
+            background: #e53935;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+        }
+
+        button.sent {
+            background: #1976d2;
+        }
+
+        .back-link {
+            background: var(--white);
+            color: var(--plum);
+        }
+
+        .status {
+            color: var(--pink);
+            font-size: 14px;
+        }
+
+        .reference-footer {
+            position: fixed;
+            z-index: 5;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            box-sizing: border-box;
+            background: rgba(67, 16, 59, 0.92);
+            color: #ffb3ed;
+            font-size: 14px;
+            text-align: center;
+            pointer-events: none;
+            transition: none;
+            animation: none;
+        }
+
+        .page-nav {
+            position: fixed;
+            z-index: 10;
+            top: 24px;
+            left: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .page-nav a {
+            padding: 10px 16px;
+            border-radius: 6px;
+            background: var(--white);
+            color: var(--plum);
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .page-nav a:hover {
+            background: var(--pink);
+            transform: translateY(-4px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 560px) {
+            main { padding: 10px; }
+            th, td { display: block; width: 100%; }
+            th { padding-bottom: 4px; border-bottom: 0; }
+            td { padding-top: 4px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="page-nav" aria-label="Page navigation">
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+    </nav>
+    <a class="contact-float" href="contact.html" aria-label="Contact" title="Drag or click Contact" style="position: fixed; z-index: 10; right: 24px; bottom: 56px; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #ffb3ed; color: #43103b; font-size: 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.35); cursor: grab; touch-action: none;">&#9993;</a>
+    <main>
+        <h1>Contact Me</h1>
+        <p class="email-address">aimamaqsood786@gmail.com</p>
+        <form id="emailForm">
+            <table>
+                <tr>
+                    <th><label for="to">TO</label></th>
+                    <td><input id="to" name="to" type="email" value="aimamaqsood786@gmail.com" readonly></td>
+                </tr>
+                <tr>
+                    <th><label for="from">FROM</label></th>
+                    <td><input id="from" name="from" type="email" placeholder="your-email@example.com" required></td>
+                </tr>
+                <tr>
+                    <th><label for="subject">SUBJECT</label></th>
+                    <td><input id="subject" name="subject" type="text" placeholder="Subject" required></td>
+                </tr>
+                <tr>
+                    <th><label for="message">COMPOSE EMAIL</label></th>
+                    <td><textarea id="message" name="message" placeholder="Write your message here..." required></textarea></td>
+                </tr>
+            </table>
+            <div class="actions">
+                <button id="sendButton" type="submit">Send</button>
+                <span class="status" id="status" aria-live="polite"></span>
+            </div>
+        </form>
+    </main>
+    <footer class="reference-footer">Reference by Aima Maqsood</footer>
+    <script>
+        const emailForm = document.querySelector('#emailForm');
+        const sendButton = document.querySelector('#sendButton');
+        const status = document.querySelector('#status');
+
+        emailForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            sendButton.classList.add('sent');
+            sendButton.textContent = 'Sent';
+            status.textContent = 'Your message has been prepared successfully.';
+        });
+    </script>
+</body>
+<script src="contact-drag.js"></script>
+</html>
